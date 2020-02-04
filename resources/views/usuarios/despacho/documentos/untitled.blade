@@ -1,0 +1,206 @@
+	<div class="col-6">
+			<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+				<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+				<div class="text-dark text-center mt-3">
+				<div class="form-group text-center">
+					<label for="">Curricula del personal que realizará la evaluación.</label>
+					<input accept=".pdf"  type="file" class="form-control" name="curricula_personal"
+					@if (isset($postula->documentoEspecifico->curricula_personal))
+						@if($postula->documentoEspecifico->curricula_personal!='') 
+						disabled
+						@endif
+					@endif
+					>
+					<br>
+					@if (isset($postula->documentoEspecifico->curricula_personal))
+					@if($postula->documentoEspecifico->curricula_personal!='')
+					<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->curricula_personal)}}"> Curricula del personal</a>
+					<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['curricula_personal',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+					@endif
+					@endif
+				</div>
+				</div>
+			</div>
+		</div>
+
+			{{-- IDENTIFICACION FIRMA PROPUESTAS --}}
+
+		<div class="col-6">
+			<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+				<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+				<div class="text-dark text-center mt-3">
+				<div class="form-group text-center">
+					<label for="">
+						Copia legible de identificación oficial vigente de quien firma las propuestas.
+					</label>
+					<input accept=".pdf"  type="file" class="form-control" name="identificacion_firma_propuestas"
+					@if (isset($postula->documentoEspecifico->identificacion_firma_propuestas))
+						@if($postula->documentoEspecifico->identificacion_firma_propuestas!='') 
+						disabled
+						@endif
+					@endif
+					>
+					<br>
+					@if (isset($postula->documentoEspecifico->identificacion_firma_propuestas))
+					@if($postula->documentoEspecifico->identificacion_firma_propuestas!='')
+					<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->identificacion_firma_propuestas)}}"> Copia Identificación de Firma Propuestas</a>
+					<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['identificacion_firma_propuestas',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+					@endif
+					@endif
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		{{-- MANIFIESTO VERDAD --}}
+	<div class="row align-items-center my-5">
+		
+			<div class="col-6">
+				<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+					<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+					<div class="text-dark text-center mt-3">
+					<div class="form-group text-center">
+						<label for="">	
+							Escrito del convocante en el que manifieste bajo protesta 
+							decir verdad que se compromete a cumplir con la entrega de los servicios.
+						</label>
+						<input accept=".pdf"  type="file" class="form-control" name="manifiesto_verdad"
+						@if (isset($postula->documentoEspecifico->manifiesto_verdad))
+							@if($postula->documentoEspecifico->manifiesto_verdad!='') 
+							disabled
+							@endif
+						@endif
+						>
+						<br>
+						@if (isset($postula->documentoEspecifico->manifiesto_verdad))
+						@if($postula->documentoEspecifico->manifiesto_verdad!='')
+						<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->manifiesto_verdad)}}"> Manifiesto Verdad</a>
+						<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['manifiesto_verdad',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+						@endif
+						@endif
+					</div>
+					</div>
+				</div>
+			</div>
+
+			{{-- PROPUESTA TRABAJO --}}
+
+			<div class="col-6">
+				<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+					<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+					<div class="text-dark text-center mt-3">
+					<div class="form-group text-center">
+						<label for="">
+							Propuesta de trabajo ejecutiva.	
+						</label>
+						<input accept=".pdf"  type="file" class="form-control" name="propuesta_trabajo"
+						@if (isset($postula->documentoEspecifico->propuesta_trabajo))
+							@if($postula->documentoEspecifico->propuesta_trabajo!='')
+							disabled
+							@endif
+						@endif
+						>
+
+						@if (isset($postula->documentoEspecifico->propuesta_trabajo))
+							@if($postula->documentoEspecifico->propuesta_trabajo!='')
+						<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->propuesta_trabajo)}}"> Propuesta de Trabajo</a>
+						<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['propuesta_trabajo',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+							@endif
+						@endif
+					</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="row align-items-center my-5">
+		
+		{{-- CARTA MANIFESTACION --}}
+
+			<div class="col-6">
+				<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+					<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+					<div class="text-dark text-center mt-3">
+					<div class="form-group text-center">
+						<label for="">
+							Carta de manifestación de tener conocimiento de las caraterísticas y operación del fondo o 
+							programa objeto de evaluación, o bien de programas similares.
+						</label>
+						<input accept=".pdf" type="file" class="form-control" name="carta_manifestacion"
+						@if (isset($postula->documentoEspecifico->carta_manifestacion))
+							@if($postula->documentoEspecifico->carta_manifestacion!='')
+							disabled
+							@endif
+						@endif
+						>
+						@if (isset($postula->documentoEspecifico->carta_manifestacion))
+							@if($postula->documentoEspecifico->carta_manifestacion!='')
+								<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->carta_manifestacion)}}"> Carta Manifestacion</a>
+								<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['carta_manifestacion',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+							@endif
+						@endif
+					</div>
+					</div>
+				</div>
+			</div>
+
+			{{-- PROPUESTA ECONOMICA --}}
+
+			<div class="col-6">
+				<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+					<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+					<div class="text-dark text-center mt-3">
+					<div class="form-group text-center">
+						<label for="">
+							Propuesta económica.
+						</label>
+						<input accept=".pdf"  type="file" class="form-control" name="propuesta_economica"
+						@if (isset($postula->documentoEspecifico->propuesta_economica))
+							@if($postula->documentoEspecifico->propuesta_economica!='') 
+							disabled
+							@endif
+						@endif
+						>
+						<br>
+						@if (isset($postula->documentoEspecifico->propuesta_economica))
+						@if($postula->documentoEspecifico->propuesta_economica!='')
+						<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->propuesta_economica)}}"> Propuesta económica</a>
+						<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['propuesta_economica',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+						@endif
+						@endif
+					</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="row align-items-center my-5">
+		
+	{{-- CRONOGRAMA ACTIVIDADES --}}
+
+		<div class="col-12">
+			<div class="card border-secondary mx-sm-1 p-3 bg-light ">
+				<div class="text-center"><span class="fas fa-file-pdf fa-4x text-danger"></span></div>                    
+				<div class="text-dark text-center mt-3">
+				<div class="form-group text-center">
+					<label for="">
+						Propuesta de Cronograma de actividades.
+					</label>
+					<input accept=".pdf"  type="file" class="form-control" name="cronograma_actividades"
+					@if (isset($postula->documentoEspecifico->cronograma_actividades))
+						@if($postula->documentoEspecifico->cronograma_actividades!='') 
+						disabled
+						@endif
+					@endif
+					>
+					<br>
+					@if (isset($postula->documentoEspecifico->cronograma_actividades))
+					@if($postula->documentoEspecifico->cronograma_actividades!='')
+					<a target="_blank" href="{{asset('storage/'.$postula->documentoEspecifico->cronograma_actividades)}}"> Cronograma de Actividades</a>
+					<a href="{{route('despacho.solicitudes.borrarDocumentoEspecifico',['cronograma_actividades',$postula->documentoEspecifico->id])}}"><span class="badge badge-danger">Eliminar</span></a>
+					@endif
+					@endif
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>

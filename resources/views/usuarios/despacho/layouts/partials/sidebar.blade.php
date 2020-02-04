@@ -1,0 +1,61 @@
+ <!-- Sidebar -->
+    <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+        <div class="sidebar-brand-icon">
+        </div>
+        <div class="sidebar-brand-text mx-3">Despacho</div>
+      </a>
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link hvr-icon-pulse" href="{{route('despacho.solicitudes.index')}}">
+          <i class="fas fa-home hvr-icon"></i>
+          <span>Inicio</span></a>
+      </li>
+      {{-- Mensajes --}}    
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Heading
+      <div class="sidebar-heading">
+        Interface
+      </div>
+      -->
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item @yield('link')">
+        <a class="nav-link collapsed hvr-icon-grow-rotate" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-clipboard-list hvr-icon"></i>
+          <span>Convocatoria</span>
+        </a>
+        <div id="collapseTwo" class="collapse @yield('status')" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Administración:</h6>
+            <a class="hvr-underline-from-left collapse-item"  href="{{ route('despacho.solicitudes.index')}}">Solicitudes</a>
+            <a class="hvr-underline-from-left collapse-item @yield('link')"  href="{{ route('despacho.home.evaluaciones')}}">Historial de Solicitudes</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      {{-- <div class="sidebar-heading">
+        Addons
+      </div> --}}
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline hvr-icon-buzz-out">
+        <button class="rounded-circle border-0 hvr-icon" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->

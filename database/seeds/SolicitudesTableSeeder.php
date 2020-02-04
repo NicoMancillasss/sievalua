@@ -1,0 +1,186 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class SolicitudesTableSeeder extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run()
+    {
+        
+
+        \DB::table('solicitudes')->delete();
+        
+        \DB::table('solicitudes')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'folio' => 'SFP-PAE-1607053212',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'aceptado',
+                'user_id' => 3,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:33:43',
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'folio' => 'SFP-PAE-1607053213',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'revision',
+                'user_id' => 11,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:32:12',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'folio' => 'SFP-PAE-1607053214',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'revision',
+                'user_id' => 12,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:32:12',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'folio' => 'SFP-PAE-1607053215',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'revision',
+                'user_id' => 13,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:32:12',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'folio' => 'SFP-PAE-1607053216',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'revision',
+                'user_id' => 14,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:32:12',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'folio' => 'SFP-PAE-1607053217',
+                'rfc' => 'GIVF840630E85',
+            'telefono' => '(492) 146-47-11',
+            'telefono_oficina' => '(234) 234-23-23',
+                'nombre' => 'FRANCISCO CERVANDO',
+                'apellido_paterno' => 'LOZANO',
+                'apellido_materno' => 'LOZANO',
+                'estatus' => 'revision',
+                'user_id' => 15,
+                'estado_id' => 16,
+                'municipio_id' => 808,
+                'redes_sociales' => '312312',
+                'ejercicio_id' => 1,
+                'pais_id' => 108,
+                'colonia' => '324324',
+                'vialidad_id' => 15,
+                'vialidad' => '34234',
+                'numero_interior' => '33',
+                'numero_exterior' => '33',
+                'codigo_postal' => '34242',
+                'descripcion_rechazo' => NULL,
+                'created_at' => '2019-07-16 17:32:12',
+                'updated_at' => '2019-07-16 17:32:12',
+            ),
+        ));
+        
+        
+    }
+}

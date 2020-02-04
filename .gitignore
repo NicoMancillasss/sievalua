@@ -1,0 +1,21 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/resources/views/usuarios/despacho/solicitudes/create.blade.php
+public/docs/CONSTITUCI�N-POL�TICA-DEL-ESTADO-LIBRE-Y-SOBERANO-DE-ZACATECAS-3.pdf
+composer.lock
+package-lock.json
+package.json
+.env
+<<<<<<< HEAD
+
+=======
+>>>>>>> 247b436417e0246c84474aac2bae4d63edc605e7
+.env
